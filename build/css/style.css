@@ -8,3 +8,7 @@ body {
     display: flex; }
   .block a {
     color: green; }
+  .block p {
+    color: purple;
+    font-family: fantasy;
+    font-size: 30px; }

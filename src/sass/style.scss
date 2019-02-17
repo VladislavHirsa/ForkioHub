@@ -1,0 +1,28 @@
+$header-color: #5B3A29;
+$bg-color: #FF4500;
+
+body{
+    background-color: $bg-color;
+}
+
+.block{
+    background-color: $header-color;
+    h1{
+        color: $bg-color;
+        display: flex;
+    }
+    a{
+        color: green;
+    }
+    p{
+        color: purple;
+        font-family: fantasy;
+        font-size: 80px;
+    }
+    
+    
+    
+    
+    
+   
+}

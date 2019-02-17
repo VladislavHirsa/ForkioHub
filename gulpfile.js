@@ -8,25 +8,19 @@
  const imagemin = require('gulp-imagemin');
  let del = require('del');
  const browserSync = require('browser-sync').create();
- let reload = browserSync.reload;
+
  let sass = require('gulp-sass');
- // let watch = require('gulp-watch');
+ let watch = require('gulp-watch');
  const scssFiles = ['./sass/**/*.scss']
  const cssFiles = ['./build/css/normalize.css',
                        './build/css/style.css']
+ const styleCss = ['./build/css/*.css'];
+ const mainCss = ['./buld/css/main_min.css']
+ const img = ['src/images/*'];
+const js = ['js/*.js'];
 
-
-
- function sAss() {
-     return gulp.src(scssFiles)
-         .pipe(sass().on('error', sass.logError))
-         .pipe(gulp.dest('./build/css'));
-
-
- };
-
- function css() {
-     return gulp.src(cssFiles)
+ gulp.task('css',function () {
+     gulp.src(cssFiles)
          .pipe(concat("main.css"))
          .pipe(cleanCSS({
              level: 2
@@ -39,25 +33,29 @@
              cascade: false
          }))
          .pipe(rename("main_min.css"))
-         .pipe(gulp.dest('./build/css'));
- };
+         .pipe(gulp.dest('./build/css'))
+         .pipe(browserSync.stream());
+ });
 
 
  gulp.task('scripts', function () {
-     return gulp.src('js/*.js')
+     gulp.src(js)
          .pipe(concat('all.js'))
          .pipe(uglify({
              toplevel: true
          }))
-         .pipe(gulp.dest('build/js'));
+         .pipe(gulp.dest('build/js'))
+         .pipe(browserSync.stream());
+
  });
 
 
- gulp.task('img', () =>
-     gulp.src('src/images/*')
+ gulp.task('img',function() {
+     gulp.src(img)
      .pipe(imagemin())
      .pipe(gulp.dest('build/images'))
- );
+     .pipe(browserSync.stream());
+ });
 
  // function clean() {
  //     del(['./build/css/style.css']);
@@ -65,31 +63,27 @@
 
 
 
- //gulp.task('browser-sync', function() {
- //    browserSync.init({
- //        server: {
- //            baseDir: "./"
- //        }
- //    });
- //});
 
- function wat() {
+
+
+ gulp.task('sass', function () {
+     return gulp.src(scssFiles)
+         .pipe(sass())
+         .pipe(gulp.dest('./build/css'))
+         .pipe(browserSync.stream());
+ });
+
+ gulp.task('serve', ['sass'], function () {
      browserSync.init({
-         server: {
-             baseDir: "./"
-         },
-         tunnel: true
+         server: './'
      });
 
-//     gulp.watch('./sass/**/*.scss', sAss)
-    return gulp.watch('./build/css/*.css', css)
-     gulp.watch('./*.html', briuserSync.reload)
+     gulp.watch(scssFiles, ['css']); 
+     gulp.watch(img, ['img']); 
+     gulp.watch(js, ['scripts']); 
 
+     
+     gulp.watch('./*.html').on('change', browserSync.reload);
+ });
 
- };
-
-
- gulp.task('css', css);
- gulp.task('sAss', sAss);
- // gulp.task('clean', clean);
- gulp.task('wat', wat);
+ gulp.task('watch', ['serve']);
