@@ -11,16 +11,23 @@
 
  let sass = require('gulp-sass');
  let watch = require('gulp-watch');
- const scssFiles = ['./sass/**/*.scss']
- const cssFiles = ['./build/css/normalize.css',
-                       './build/css/style.css']
- const styleCss = ['./build/css/*.css'];
+ const scssFiles = ['./src/sass/style.scss']
+let css_normalizeFiles = ['./src/sass/normalize.css',
+                       './src/sass/style.css']
+ const styleCss = ['./build/css/main_min.css'];
  const mainCss = ['./buld/css/main_min.css']
  const img = ['src/images/*'];
-const js = ['js/*.js'];
+const js = ['/src/js/*.js'];
+
+ gulp.task('sass', function () {
+     return gulp.src(scssFiles)
+         .pipe(sass())
+         .pipe(gulp.dest('./src/sass'))
+         .pipe(browserSync.stream());
+ });
 
  gulp.task('css',function () {
-     gulp.src(cssFiles)
+     gulp.src(css_normalizeFiles)
          .pipe(concat("main.css"))
          .pipe(cleanCSS({
              level: 2
@@ -66,19 +73,14 @@ const js = ['js/*.js'];
 
 
 
- gulp.task('sass', function () {
-     return gulp.src(scssFiles)
-         .pipe(sass())
-         .pipe(gulp.dest('./build/css'))
-         .pipe(browserSync.stream());
- });
 
- gulp.task('serve', ['sass'], function () {
+ gulp.task('serve', ['sass', 'css', 'scripts', 'img'], function () {
      browserSync.init({
          server: './'
      });
 
-     gulp.watch(scssFiles, ['css']); 
+     gulp.watch(scssFiles, ['sass']); 
+     gulp.watch(css_normalizeFiles, ['css']); 
      gulp.watch(img, ['img']); 
      gulp.watch(js, ['scripts']); 
 
