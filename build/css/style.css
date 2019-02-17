@@ -1,0 +1,10 @@
+body {
+  background-color: #FF4500; }
+
+.block {
+  background-color: #5B3A29; }
+  .block h1 {
+    color: #FF4500;
+    display: flex; }
+  .block a {
+    color: green; }
