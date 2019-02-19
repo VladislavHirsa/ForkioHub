@@ -11,6 +11,10 @@ height: $hight;
 background: #8F80A9;
 border-radius: 20px;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 $font: "Montserrat",sans-serif;
 .open{
     margin-bottom: 20px;
@@ -119,13 +123,14 @@ $font: "Montserrat",sans-serif;
         }
     
     &__intro-title{
-        left: 50%;
-        right: 50%;
+        
+        left: 1%;
+        right: 0%;
         background-position: center;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding-top: 43px;
+        padding-top: 103px;
                 height: 615px;
                 background-image: url('../../src/img/bg-main.jpg') ;
                 background-repeat: no-repeat;
@@ -168,7 +173,7 @@ $font: "Montserrat",sans-serif;
             padding-top: 15px;
             padding-bottom: 15px;
             text-transform: capitalize;
-            margin-top: 420px;
+            margin-top: 480px;
         }
         &__note-unlimited{
             text-transform: capitalize;
@@ -183,3 +188,32 @@ $font: "Montserrat",sans-serif;
         }
     }
 }
+    .revolutionary-editor{
+        margin-top: 121px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 25px 0px 25px;
+        &__title {
+            line-height: 2;
+            font-family: "Montserrat",sans-serif;
+            color:
+            #635c73;
+            font-size: 26px;/* Приближение из-за подстановки шрифтов */
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &__description{
+            font-family: "Lato",sans-serif;
+            color:
+            #323232;
+            font-size: 14px;/* Приближение из-за подстановки шрифтов */
+            font-weight: 400;
+            line-height: 14.673px;/* Приближение из-за подстановки шрифтов */
+            text-align: center;
+
+
+        }
+
+    }

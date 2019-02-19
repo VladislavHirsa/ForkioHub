@@ -1,4 +1,8 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
 .open {
   margin-bottom: 20px; }
 
@@ -89,13 +93,13 @@
         -o-transform: rotate(-135deg);
         transform: rotate(-135deg); }
   .header__intro-title {
-    left: 50%;
-    right: 50%;
+    left: 1%;
+    right: 0%;
     background-position: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 43px;
+    padding-top: 103px;
     height: 615px;
     background-image: url("../../src/img/bg-main.jpg");
     background-repeat: no-repeat; }
@@ -147,7 +151,7 @@
       padding-top: 15px;
       padding-bottom: 15px;
       text-transform: capitalize;
-      margin-top: 485px; }
+      margin-top: 480px; }
     .header__intro-title__note-unlimited {
       text-transform: capitalize;
       font-family: "Montserrat",sans-serif;
@@ -159,3 +163,28 @@
       line-height: 15px;
       /* Приближение из-за подстановки шрифтов */
       text-align: center; }
+
+.revolutionary-editor {
+  margin-top: 121px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 25px 0px 25px; }
+  .revolutionary-editor__title {
+    line-height: 2;
+    font-family: "Montserrat",sans-serif;
+    color: #635c73;
+    font-size: 26px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center; }
+  .revolutionary-editor__description {
+    font-family: "Lato",sans-serif;
+    color: #323232;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 14.673px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center; }
