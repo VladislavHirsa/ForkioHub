@@ -20,9 +20,9 @@ let css_normalizeFiles = ['./src/sass/normalize.css',
 const js = ['/src/js/*.js'];
 
  gulp.task('sass', function () {
-     return gulp.src(scssFiles)
+     return gulp.src('./src/sass/*.scss')
          .pipe(sass())
-         .pipe(gulp.dest('./src/sass'))
+         .pipe(gulp.dest('./build/css'))
          .pipe(browserSync.stream());
  });
 
@@ -46,12 +46,12 @@ const js = ['/src/js/*.js'];
 
 
  gulp.task('scripts', function () {
-     gulp.src(js)
+     gulp.src('./src/js/*.js')
          .pipe(concat('all.js'))
          .pipe(uglify({
              toplevel: true
          }))
-         .pipe(gulp.dest('build/js'))
+         .pipe(gulp.dest('./build/js'))
          .pipe(browserSync.stream());
 
  });
