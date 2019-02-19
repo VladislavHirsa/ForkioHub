@@ -93,6 +93,7 @@
         -o-transform: rotate(-135deg);
         transform: rotate(-135deg); }
   .header__intro-title {
+    background-size: cover;
     left: 1%;
     right: 0%;
     background-position: center;
