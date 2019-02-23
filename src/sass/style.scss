@@ -11,9 +11,16 @@ height: $hight;
 background: #8F80A9;
 border-radius: 20px;
 }
+#eye{
+    font-size: 14px;
+}
 *{
     margin: 0;
     padding: 0;
+}
+#disapp-btn{
+    
+    visibility: hidden;
 }
 $font: "Montserrat",sans-serif;
 .open{
@@ -37,19 +44,106 @@ $font: "Montserrat",sans-serif;
             display: flex;
             justify-content: space-between;
             height: 103px;
+            &__menu-hd{
+            
+                position: absolute;
+                margin: 84px auto 0px auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100vw;
+                &__align{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 60vw;
+                    &__menu-item{
+                        text-decoration: none;
+                            &__link{
+                                font-family: "Montserrat",sans-serif;
+                                color:#8d81ac;
+                                font-size: 16px;/* Приближение из-за подстановки шрифтов */
+                                font-weight: 700;
+                                
+                            }
+                }
+             
+                }
+            }
             &__logo{
-                background-image: url("../../src/img/logo-pen.png");
+              
+                
+                align-items: center;
+                display: flex;
+                &__logo-img{
+                    background-image: url("../../src/img/logo-pen.png");
                 width: 43px;
-                height: 41px;
+                height: 41px; 
+                }
+                &__logo-txt{
+                    margin-left: 12px;
+                    font-family: "Lato",sans-serif;
+                    color:#8d81ac;
+                    font-size: 24px;/* Приближение из-за подстановки шрифтов */
+                    font-weight: 700;
+                    line-height: 16px;/* Приближение из-за подстановки шрифтов */
+                    text-align: left;
+                    display: none;
+                    text-transform: uppercase;
+                }
                
             }
             &__btn-buy-now{
                 @include btn-purple(119px,37px)
             }
             &__menu-hd{
-                display: none;
+                visibility: hidden;;
+            }
+            &__link{
+                text-decoration: none;
+                        background: #8F80A9;
+                text-transform: capitalize;
+                font-family: "Montserrat",sans-serif;
+                color: #ffffff;
+                font-size: 32px;/* Приближение из-за подстановки шрифтов */
+                font-weight: 400;
+                padding-left: 33px;
+                text-align: left;
+                height: 96px;
             }
             &__menu-hamburger{
+               &__appeare{
+                   margin-top: 25px;
+                text-decoration: none;
+                width: 100vw;
+                position: absolute;
+                left: 0;
+               display: none;
+                  
+               .header__a__link{
+                   
+                   text-decoration: none;
+               }
+               &__link{
+                text-decoration: none;
+                background: #313131;
+                text-transform: capitalize;
+                font-family: "Montserrat",sans-serif;
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #373737;
+                font-size: 32px;/* Приближение из-за подстановки шрифтов */
+                font-weight: 400;
+                padding-left: 33px;
+                text-align: left;
+                height: 96px;}
+                &__link:hover{
+                    color: #8d81ac;
+                    border-right:5px solid #8d81ac;
+                }
+            }
+             
                 &__icon{
                     -webkit-transform: rotate(0deg);
                     -moz-transform: rotate(0deg);
@@ -132,7 +226,8 @@ $font: "Montserrat",sans-serif;
         flex-direction: column;
         padding-top: 103px;
                 height: 615px;
-                background-image: url('../../src/img/bg-main.jpg') ;
+                background-position: center;
+                background-image: url('../../src/img/main-bg.jpg') ;
                 background-repeat: no-repeat;
                 &__title{
                 
@@ -142,7 +237,11 @@ $font: "Montserrat",sans-serif;
                 font-weight: 700;
                 text-align: center;
         }
-        &__note-undertitle{
+        &__note-undertitle-block{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &__note-undertitle{
             text-transform: capitalize;
             font-family: $font;
             color:#8d81ac;
@@ -156,6 +255,7 @@ $font: "Montserrat",sans-serif;
         }
         &__note-undertitle:nth-child(3){
             margin-top: 5px;
+        }
         }
         &__note-v-of-forkio{
             margin-top: 10px;
@@ -195,7 +295,11 @@ $font: "Montserrat",sans-serif;
         flex-direction: column;
         padding: 0px 25px 0px 25px;
         &__title {
-            line-height: 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                &__title-item{
+                    line-height: 2;
             font-family: "Montserrat",sans-serif;
             color:
             #635c73;
@@ -203,6 +307,7 @@ $font: "Montserrat",sans-serif;
             font-weight: 700;
             text-transform: uppercase;
             text-align: center;
+                }
         }
         &__description{
             font-family: "Lato",sans-serif;
@@ -215,5 +320,167 @@ $font: "Montserrat",sans-serif;
 
 
         }
+        &__three-btns-block{
+          
+            width: 81vw;
+            margin: 35px auto auto auto;
+           
+            &__btn{
+                
+                display: flex;
+                height: 27px;
+                &__icon-and-txt{
+                font-weight: 700;
+                    border-color: rgba(27,31,35,.35);
+                    border-radius: 3px;
+                padding: 0px 10px 0px 10px;
+                text-transform: capitalize;
+                width: 60px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-color: rgba(27,31,35,.35);
+                background-color: #e6ebf1;
+                font-size: 12px;
+                font-family: $font;
+                border: 1px solid rgba(27,31,35,.2);
+                border-right: none;
+            }
+            &__icon-and-txt:nth-child(1){
+                width: 80px;
+            }
+                &__number{
+
+                    border-left: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 45px;
+                    background-color: #fff;
+                    border: 1px solid rgba(27,31,35,.2);
+                    border-radius: 3px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    font-family: $font;
+                }
+            }
+        }
+
 
     }
+    .revolutionary-editor__three-btns-block_line1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .revolutionary-editor__three-btns-block_line2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+@media (min-width: 480px)and(max-width:720px){
+    .revolutionary-editor__three-btns-block_line2{
+        display: none;
+    }
+    #disapp-btn{
+        visibility: visible;
+    }
+    .header__hat-mobile__btn-buy-now{
+        margin-right: 12px;
+    }
+    .header__hat-mobile__logo__logo-txt{
+        display: block;
+    }
+    .header__intro-title{
+        &__title{
+            font-size: 54px;
+        }
+        &__note-undertitle{
+            font-size: 20px;
+        }
+        &__note-undertitle:nth-child(2){
+            margin-top: 35px;
+        }
+        &__note-v-of-forkio{
+            font-size: 16px;
+        }
+        &__btn-buy-now{
+            background-color:#8d81ac;
+            width: 390px;
+            height: 62px;
+            font-size: 21px;
+        }
+
+        
+    }
+    .revolutionary-editor{
+        &__title{
+            font-size: 42px;
+        }
+        &__description{
+            font-size: 16px;
+        }
+    }
+}
+@media (min-width:720px)and(max-width:1200px){
+    .header__hat-mobile{
+        height: 118px;
+     
+    }
+    .header__hat-mobile__menu-hamburger{
+        display: none;
+    }
+    .header__hat-mobile__menu-hd{
+         visibility: visible;
+
+    }
+    .revolutionary-editor__title{
+        flex-direction: row;
+    }
+    .revolutionary-editor__title__title-item:nth-child(1){
+        margin-right: 10px;
+    }
+    .header__intro-title{
+        &__titel{
+            font-size: 72px;
+        }
+        &__note-undertitle{
+            font-size: 24px;
+        }
+        &__note-v-of-forkio{
+            font-size: 14px;
+        }
+        &__btn-buy-now{
+            width: 390px;
+height: 62px;
+            margin-top: 530px;
+            font-size: 21px;
+        }
+
+    }
+    .header__intro-title__note-undertitle-block{
+        flex-direction:row;
+    }
+    .header__intro-title__note-undertitle-block__note-undertitle:nth-child(2){
+        margin-left: 10px;
+        margin-top: 0;
+    }
+    .revolutionary-editor{
+        &__title{
+            &__title-item{
+                font-size: 42px;
+            }
+        }
+    &__description{
+        line-height: 23.476px;
+        font-size: 21px;
+    }
+    }
+    .revolutionary-editor__three-btns-block_line2{
+        display: none;
+    }
+    #disapp-btn{
+        visibility: visible;
+    }
+}
+
