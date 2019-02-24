@@ -378,7 +378,7 @@ $font: "Montserrat",sans-serif;
         justify-content: center;
         margin-top: 20px;
     }
-@media (min-width: 480px)and(max-width:720px){
+@media (min-width: 480px)and(max-width:768px){
     .revolutionary-editor__three-btns-block_line2{
         display: none;
     }
@@ -422,7 +422,7 @@ $font: "Montserrat",sans-serif;
         }
     }
 }
-@media (min-width:720px)and(max-width:1200px){
+@media (min-width:768px)and(max-width:1200px){
     .header__hat-mobile{
         height: 118px;
      
@@ -484,3 +484,89 @@ height: 62px;
     }
 }
 
+@media (min-width: 1200px){
+    .revolutionary-editor__three-btns-block_line2{
+        display: none;
+    }
+    .header__intro-title__btn-buy-now{
+        width: 390px;
+        font-size: 21.01px;
+    }
+    .revolutionary-editor__description{
+        font-size: 21px;
+        width: 75vw;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        line-height: 23.476px;
+    }
+    .header__hat-mobile__btn-buy-nowХ{
+        width: 145px;
+        font-size: 16px;
+        height: 38px;
+    }
+    .header__hat-mobile__menu-hamburger{
+        display: none;
+    }
+    .header__hat-mobile__menu-hd{
+        visibility: visible;
+        margin-top: 0;
+    }
+    .header__hat-mobile__logo__logo-txt{
+        display: block;
+        visibility: visible;
+    }
+    .header__hat-mobile{
+        padding:0px 90px 0px 90px ;
+    }
+    .header__hat-mobile__menu-hd__align{
+        width: 35vw;
+    }
+  .header__intro-title{
+      &__title{
+        font-size: 82px;
+
+      }
+      &__note-undertitle-block{
+        flex-direction:row;
+        &__note-undertitle{
+            font-size: 30px;
+        }
+    }
+    &__note-v-of-forkio{
+        margin-top: 18px;
+    }
+
+  }
+  #disapp-btn{
+    
+    visibility: visible;
+}
+.revolutionary-editor__three-btns-block_line1{
+    width: 500px;
+    margin: auto;
+}
+  .revolutionary-editor{
+      &__note-undertitle-block__note-undertitle{
+        font-size: 54px;
+      }
+    &__description{
+        font-style: 21px;
+    }
+  }
+  .revolutionary-editor__title__title-item{
+      font-size: 54px;
+
+  }
+  .revolutionary-editor__title__title-item:nth-child(2){
+      margin-left: 10px;
+  }
+}
+.header__intro-title__note-undertitle-block__note-undertitle:nth-child(2) {
+    margin-top: 0;
+    margin-left: 10px;
+
+}
+.revolutionary-editor__title{
+    flex-direction: row;
+}
