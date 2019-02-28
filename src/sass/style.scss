@@ -1,0 +1,639 @@
+$purpl:#8d81ac;
+
+
+* {
+    transition: all .2s;
+}
+
+@mixin images {
+    padding: 0px 10px;
+    float: left;
+    display: inline-block;
+}
+
+@mixin discripsion {
+    width: 100%;
+    font-size: 42px;
+    line-height: 57px;
+    margin: 2.3rem 0rem 1.3rem;
+}
+
+@mixin display {
+
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 95.6rem;
+
+    &__container {
+
+        .descripsion {
+            font-family: "Montserrat";
+            text-align: center;
+            color: $purpl;
+            font-size: 32px;
+            font-weight: 700;
+            margin-top: 1.9rem;
+        }
+
+        .discripsion__long {
+            margin: 1.9rem 10px 0px 10px;
+            text-align: center;
+
+            &__text {
+
+                &-m {
+                    font-family: "Montserrat";
+                    font-size: 16px;
+                    color: #323232;
+                    margin-top: 1.6rem;
+                    margin-bottom: 0.8rem;
+                }
+
+                &-s {
+                    font-family: "Lato";
+                    font-size: 14px;
+                    color: #848e97;
+                    line-height: 21px;
+                }
+            }
+
+
+        }
+
+        &-editor {
+            background-image: url("/build/images/editor.svg");
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100vw;
+            height: 23rem;
+            margin-top: 4rem;
+        }
+
+    }
+}
+
+@media screen and (min-width:320px) {
+
+    .opportunitys {
+        @include display;
+    }
+}
+
+@media screen and (min-width:480px) {
+
+    .opportunitys {
+        @include display;
+
+        height: 85rem;
+
+        &__container {
+
+            .descripsion {
+                @include discripsion;
+
+            }
+
+            .discripsion__long {
+                margin-top: 2.8rem;
+
+                &__img-created {
+                    @include images;
+                    margin-left: 7px;
+                }
+
+                &__img-incred {
+                    @include images;
+                    margin-left: 7px;
+                }
+
+                &__img-expr {
+                    @include images;
+                    margin-left: 24px;
+                }
+
+                &__img-created2 {
+                    @include images;
+                    margin-left: 16px;
+                }
+
+                &__text {
+                    text-align: left;
+                    margin: 0px 20px 0px 150px;
+
+
+                    &-m {
+                        margin-top: 0px;
+                    }
+
+                    &-s {
+                        line-height: 22px;
+                    }
+                }
+
+
+            }
+
+            &-editor {
+                background-image: url("/build/images/editor%20(1).svg");
+                background-size: contain;
+                height: 32.4rem;
+                margin-top: 2.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .opportunitys {
+        @include display;
+
+        height: 78.7rem;
+
+        &__container {
+
+            .descripsion {
+                @include discripsion;
+                margin: 2.9rem 0rem 0.1rem;
+            }
+
+            .discripsion__long {
+                margin-top: 3.2rem;
+
+                &__img-created {
+                    @include images;
+                    margin-left: 0.7rem;
+                }
+
+                &__img-incred {
+                    @include images;
+                    margin-left: 0.7rem;
+                }
+
+                &__img-expr {
+                    @include images;
+                    margin-left: 1.75rem;
+                }
+
+                &__img-created2 {
+                    @include images;
+                    margin-left: 1.25rem;
+                }
+
+                &__text {
+                    text-align: left;
+                    margin: 0rem 1.55rem 0rem 10rem;
+
+
+                    &-m {
+                        margin-top: 0rem;
+                    }
+
+                    &-s {
+                        font-family: "Montserrat";
+                        font-weight: 400;
+                        line-height: 22px;
+                    }
+                }
+
+
+            }
+
+            &-editor {
+                background-image: url("/build/images/editor%20(2).svg");
+                //            background-size: contain;
+                height: 32.4rem;
+                margin-top: 2.9rem;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .opportunitys {
+        @include display;
+        height: 44.4rem;
+
+        &__container {
+            padding-top: 3.5rem;
+            //            display: block;
+            align-items: flex-start;
+            width: 1200px;
+            position: relative;
+
+            .descripsion {
+                @include discripsion;
+                width: 45%;
+                position: absolute;
+                right: 0px;
+                margin: 0rem 0rem 0.1rem;
+                line-height: 65px;
+            }
+
+            .discripsion__long {
+                width: 45%;
+                margin-top: 1.7rem;
+
+
+                &__img-created {
+                    @include images;
+                    margin-left: 71px;
+                }
+
+                &__img-incred {
+                    @include images;
+                    margin-left: 71px;
+                }
+
+                &__img-expr {
+                    @include images;
+                    margin-left: 88px;
+                }
+
+                &__img-created2 {
+                    @include images;
+                    margin-left: 80px;
+                }
+
+                &__text {
+                    text-align: left;
+                    margin: 0px 0px 0px 215px;
+                    width: 22.8rem;
+
+
+                    &-m {
+                        margin: 0px 0px 0.6rem;
+                    }
+
+                    &-s {
+                      
+
+                    }
+                }
+
+
+            }
+
+            &-editor {
+                background-image: url("/build/images/editor%20(2).svg");
+                height: 32.4rem;
+                width: 45%;
+                margin-top: 4.7rem;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+
+            }
+        }
+
+    }
+}
+
+
+
+//Subscribe
+
+.logo__subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 50px;
+    border-radius: 5px;
+    position: relative;
+    border-style: none;
+}
+
+@mixin logoNet {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 23px;
+}
+
+@mixin textNet {
+    font-size: 21px;
+    display: inline-block;
+}
+
+
+
+@mixin subscribe {
+max-width: 1200px;
+    height: 50.7rem;
+    background-color: rgb(255, 255, 255);
+
+    .hide_man {
+        display: none;
+    }
+
+    .about__men {
+        margin-bottom: 60px;
+    }
+
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0px 10px;
+        font-family: "Montserrat", sans-serif;
+
+        * {
+            margin: 0px;
+        }
+
+        .block__buttons {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .button__count {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                .button__git {
+                    margin: 0px 20px;
+
+                    background-color: #f3f3f3;
+                    color: #000000;
+
+                    &-logo {
+                        @include logoNet;
+                    }
+
+                    &-text {
+                        @include textNet;
+                    }
+                }
+                .button__git:hover {
+                    background-color: #2b414d;
+                    color: #f3f3f3;
+                }
+
+                .button__twitter {
+                    margin: 0px 20px;
+                    background-color: #26a6d1;
+                    color: #ffffff;
+
+                    &-logo {
+                        @include logoNet;
+                    }
+
+                    &-text {
+                        @include textNet;
+                    }
+                }
+                
+                .button__twitter:hover {
+                    background-color: #ffffff;
+                    color: #26a6d1;
+                    border: 1px solid #26a6d1;
+                }
+
+                .button__facebook {
+                    margin: 0px 20px;
+                    background-color: #3b5998;
+                    color: #ffffff;
+
+                    &-logo {
+                        @include logoNet;
+                    }
+
+                    &-text {
+                        @include textNet;
+                    }
+                }
+                
+                .button__facebook:hover {
+                    margin: 0px 20px;
+                    background-color: #ffffff;
+                    color: #3b5998;
+                    border: 1px solid #3b5998;
+                   
+                }
+
+
+                &-people {
+                    font-family: "Montserrat";
+                    color: #848e97;
+                    font-size: 14px;
+                    margin: 18px 0px 28px;
+                }
+            }
+        }
+
+    }
+
+    .carousel {
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+
+
+        .user__data {
+            display: flex;
+            flex-direction: column;
+            font-family: "Montserrat", sans-serif;
+            align-items: center;
+            margin: 64px 0px 20px;
+
+            &__person {
+                width: 87px;
+                height: 87px;
+                border-radius: 50%;
+                border: 1px solid red;
+                margin-bottom: 1.2rem;
+            }
+
+            &__full {
+                &__person-name {
+                    font-family: "Montserrat";
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #474747;
+                    margin-bottom: 12px;
+
+                }
+
+                &__nickName {
+                    font-family: "Montserrat";
+                    font-size: 16px;
+                    color: $purpl;
+                }
+            }
+        }
+
+        &__describe {
+            display: flex;
+            align-items: baseline;
+
+            &__about {
+                color: #333333;
+                font-family: "Lato";
+                font-size: 17px;
+
+
+                &-mail {
+                    color: $purpl;
+
+                }
+            }
+
+            &__arrows-left {
+                color: rgb(162, 162, 162);
+                width: 50px;
+            }
+
+            &__arrows-right {
+                color: rgb(162, 162, 162);
+                width: 50px;
+            }
+        }
+
+        &__hours {
+            color: #848e97;
+            font-size: 16px;
+            margin-top: 24px;
+        }
+    }
+
+
+
+}
+
+
+@media screen and (min-width:320px) {
+    .subscribe {
+        @include subscribe;
+    }
+}
+
+@media screen and (min-width:480px) {
+    .subscribe {
+        @include subscribe;
+        height: 47.5rem;
+
+
+        .carousel {
+            .user__data {
+                flex-direction: row;
+                justify-content: center;
+                margin: 120px 0px 40px;
+
+                &__person {
+                    margin-bottom: 0px;
+                }
+
+                &__full {
+                    flex-direction: column;
+                    margin-left: 20px;
+                    text-align: left;
+
+                    &__person-name {
+                        margin-bottom: 2px;
+                    }
+
+                    &__nickName {}
+                }
+
+            }
+
+            &__describe {
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width:768px) {
+
+    .subscribe {
+        height: 40.3rem;
+
+        .carousel {
+            .user__data {
+              
+                margin: 50px 0px;
+
+                &__person {
+                   
+                }
+
+                &__full {
+                   
+
+                    &__person-name {
+                       
+                    }
+
+                    &__nickName {}
+                }
+
+            }
+
+            &__describe {
+               
+            }
+            
+
+            &__hours {
+                padding-bottom: 20px;
+                border-bottom: 1px solid rgba(199, 199, 199, 0.2);
+            }
+        }
+    }
+
+}
+
+
+
+@media screen and (min-width:1200px) {
+.subscribe {
+        height: 36.8rem;
+
+        .carousel {
+            .user__data {
+              
+                margin: 85px 0px 50px;
+
+                &__person {
+                   
+                }
+
+                &__full {
+                    &__person-name {                    
+                    }
+                    &__nickName {}
+                }
+            }
+
+            &__describe {
+            &__about {
+                
+                font-size: 20px;
+
+            }
+               
+            }
+            
+
+            &__hours {
+                padding-bottom: 60px;
+            }
+        }
+    }
+}

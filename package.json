@@ -17,6 +17,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^3.1.0",
     "gulp-imagemin": "^5.0.3",
+    "gulp-js-minify": "0.0.3",
     "gulp-livereload": "^4.0.1",
     "gulp-minify": "^3.1.0",
     "gulp-postcss": "^8.0.0",
