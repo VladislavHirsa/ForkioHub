@@ -12,11 +12,10 @@ var minifyjs = require('gulp-js-minify');
 
  let sass = require('gulp-sass');
  let watch = require('gulp-watch');
- const scssFiles = ['ForkioHub/src/sass/style.scss']
-let css_normalizeFiles = ['ForkioHub/src/sass/normalize.css',
-                       'ForkioHub/src/sass/style.css']
- const styleCss = ['ForkioHub/build/css/main_min.css'];
- const mainCss = ['ForkioHub/buld/css/main_min.css']
+ const scssFiles = ['./src/sass/style.scss'];
+const css_normalizeFiles = ['./src/sass/normalize.css','./src/sass/style.css'];
+ const styleCss = ['./build/css/main_min.css'];
+ const mainCss = ['./buld/css/main_min.css'];
  const img = ['src/images/*'];
 let js = ['src/js/*.js'];
 
@@ -41,7 +40,7 @@ let js = ['src/js/*.js'];
              cascade: false
          }))
          .pipe(rename("main_min.css"))
-         .pipe(gulp.dest('ForkioHub/build/css'))
+         .pipe(gulp.dest('./build/css'))
          .pipe(browserSync.stream());
  });
 
