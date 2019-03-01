@@ -703,7 +703,7 @@ sans-serif;
 }
 
 @mixin display {
-
+    margin: auto;
     background-color: rgb(244, 244, 244);
     display: flex;
     align-items: center;
@@ -747,7 +747,7 @@ sans-serif;
         }
 
         &-editor {
-            background-image: url("/build/images/editor.svg");
+            background-image: url("/build/img/editor.svg");
             background-position: right;
             background-repeat: no-repeat;
             background-size: contain;
@@ -821,7 +821,7 @@ sans-serif;
             }
 
             &-editor {
-                background-image: url("/build/images/editor%20(1).svg");
+                background-image: url("/build/img/editor%20(1).svg");
                 background-size: contain;
                 height: 32.4rem;
                 margin-top: 2.2rem;
@@ -887,7 +887,7 @@ sans-serif;
             }
 
             &-editor {
-                background-image: url("/build/images/editor%20(2).svg");
+                background-image: url("/build/img/editor%20(2).svg");
                 height: 32.4rem;
                 margin-top: 2.9rem;
             }
@@ -904,6 +904,7 @@ sans-serif;
         max-width: 1200px;
 
         &__container {
+            width: 100%;
             padding-top: 3.5rem;
             align-items: flex-start;
             position: relative;
@@ -959,7 +960,7 @@ sans-serif;
             }
 
             &-editor {
-                background-image: url("/build/images/editor%20(2).svg");
+                background-image: url("/build/img/editor%20(2).svg");
                 height: 32.4rem;
                 width: 45%;
                 margin-top: 4.7rem;
@@ -1004,7 +1005,6 @@ sans-serif;
 
 
 @mixin subscribe {
-    max-width: 1200px;
     height: 50.7rem;
     background-color: rgb(255, 255, 255);
 
@@ -1018,6 +1018,8 @@ sans-serif;
 
 
     &__container {
+    margin: auto;
+        max-width: 1200px;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -1115,6 +1117,7 @@ sans-serif;
     }
 
     .carousel {
+        margin: auto;
         width: 96%;
         display: flex;
         flex-direction: column;
@@ -1179,6 +1182,7 @@ sans-serif;
             &__arrows-right {
                 color: rgb(162, 162, 162);
                 width: 50px;
+                
             }
         }
 
@@ -1285,6 +1289,9 @@ sans-serif;
                 margin: 85px 0px 50px;
 
             }
+        &__hours {
+            padding-bottom: 60px;
+        }
         }
 
         &__describe {
@@ -1297,8 +1304,5 @@ sans-serif;
         }
 
 
-        &__hours {
-            padding-bottom: 60px;
-        }
     }
 }

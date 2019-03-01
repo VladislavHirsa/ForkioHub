@@ -16,7 +16,7 @@ var minifyjs = require('gulp-js-minify');
 const css_normalizeFiles = ['./src/sass/normalize.css','./src/sass/style.css'];
  const styleCss = ['./build/css/main_min.css'];
  const mainCss = ['./buld/css/main_min.css'];
- const img = ['src/images/*'];
+ const img = ['src/img/*'];
 let js = ['src/js/*.js'];
 
  gulp.task('sass', function () {
@@ -31,9 +31,6 @@ let js = ['src/js/*.js'];
          .pipe(concat("main.css"))
          .pipe(cleanCSS({
              level: 2
-         }))
-         .pipe(uncss({
-             html: ['index.html']
          }))
          .pipe(autoprefixer({
              browsers: ['last 2 versions'],
@@ -58,7 +55,7 @@ let js = ['src/js/*.js'];
  gulp.task('img',function() {
      gulp.src(img)
      .pipe(imagemin())
-     .pipe(gulp.dest('build/images'))
+     .pipe(gulp.dest('build/img'))
      .pipe(browserSync.stream());
  });
 

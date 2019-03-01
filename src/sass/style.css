@@ -452,6 +452,7 @@
 
 @media screen and (min-width: 320px) {
   .opportunitys {
+    margin: auto;
     background-color: #f4f4f4;
     display: flex;
     align-items: center;
@@ -479,7 +480,7 @@
         color: #848e97;
         line-height: 21px; }
     .opportunitys__container-editor {
-      background-image: url("/build/images/editor.svg");
+      background-image: url("/build/img/editor.svg");
       background-position: right;
       background-repeat: no-repeat;
       background-size: contain;
@@ -489,6 +490,7 @@
 
 @media screen and (min-width: 480px) {
   .opportunitys {
+    margin: auto;
     background-color: #f4f4f4;
     display: flex;
     align-items: center;
@@ -517,7 +519,7 @@
         color: #848e97;
         line-height: 21px; }
     .opportunitys__container-editor {
-      background-image: url("/build/images/editor.svg");
+      background-image: url("/build/img/editor.svg");
       background-position: right;
       background-repeat: no-repeat;
       background-size: contain;
@@ -529,92 +531,93 @@
       font-size: 42px;
       line-height: 57px;
       margin: 2.3rem 0rem 1.3rem; }
-     .discripsion__long {
+    .opportunitys__container .discripsion__long {
       margin-top: 2.8rem; }
-       .discripsion__long__img-created {
+      .opportunitys__container .discripsion__long__img-created {
         padding: 0px 10px;
         float: left;
         display: inline-block;
         margin-left: 7px; }
-       .discripsion__long__img-incred {
+      .opportunitys__container .discripsion__long__img-incred {
         padding: 0px 10px;
         float: left;
         display: inline-block;
         margin-left: 7px; }
-      .discripsion__long__img-expr {
+      .opportunitys__container .discripsion__long__img-expr {
         padding: 0px 10px;
         float: left;
         display: inline-block;
         margin-left: 24px; }
-      .discripsion__long__img-created2 {
+      .opportunitys__container .discripsion__long__img-created2 {
         padding: 0px 10px;
         float: left;
         display: inline-block;
         margin-left: 16px; }
-       .discripsion__long__text {
+      .opportunitys__container .discripsion__long__text {
         text-align: left;
         margin: 0px 20px 0px 150px; }
-        .discripsion__long__text-m {
+        .opportunitys__container .discripsion__long__text-m {
           margin-top: 0px; }
-         .discripsion__long__text-s {
+        .opportunitys__container .discripsion__long__text-s {
           line-height: 22px; }
     .opportunitys__container-editor {
-      background-image: url("/build/images/editor%20(1).svg");
+      background-image: url("/build/img/editor%20(1).svg");
       background-size: contain;
       height: 32.4rem;
       margin-top: 2.2rem; } }
 
 @media screen and (min-width: 768px) {
   .opportunitys {
+    margin: auto;
     background-color: #f4f4f4;
     display: flex;
     align-items: center;
     flex-direction: column;
     height: 95.6rem;
     height: 78.7rem; }
-     .descripsion {
+    .opportunitys__container .descripsion {
       font-family: "Montserrat";
       text-align: center;
       color: #8d81ac;
       font-size: 32px;
       font-weight: 700;
       margin-top: 1.9rem; }
-     .discripsion__long {
+    .opportunitys__container .discripsion__long {
       margin: 1.9rem 10px 0px 10px;
       text-align: center; }
-       .discripsion__long__text-m {
+      .opportunitys__container .discripsion__long__text-m {
         font-family: "Montserrat";
         font-size: 16px;
         color: #323232;
         margin-top: 1.6rem;
         margin-bottom: 0.8rem; }
-       .discripsion__long__text-s {
+      .opportunitys__container .discripsion__long__text-s {
         font-family: "Lato";
         font-size: 14px;
         color: #848e97;
         line-height: 21px; }
     .opportunitys__container-editor {
-      background-image: url("/build/images/editor.svg");
+      background-image: url("/build/img/editor.svg");
       background-position: right;
       background-repeat: no-repeat;
       background-size: contain;
       width: 100vw;
       height: 23rem;
       margin-top: 4rem; }
-     .descripsion {
+    .opportunitys__container .descripsion {
       width: 100%;
       font-size: 42px;
       line-height: 57px;
       margin: 2.3rem 0rem 1.3rem;
       margin: 2.9rem 0rem 0.1rem; }
-     .discripsion__long {
+    .opportunitys__container .discripsion__long {
       margin-top: 3.2rem; }
-       .discripsion__long__img-created {
+      .opportunitys__container .discripsion__long__img-created {
         padding: 0px 10px;
         float: left;
         display: inline-block;
         margin-left: 0.7rem; }
-       .discripsion__long__img-incred {
+      .opportunitys__container .discripsion__long__img-incred {
         padding: 0px 10px;
         float: left;
         display: inline-block;
@@ -639,12 +642,13 @@
           font-weight: 400;
           line-height: 22px; }
     .opportunitys__container-editor {
-      background-image: url("/build/images/editor%20(2).svg");
+      background-image: url("/build/img/editor%20(2).svg");
       height: 32.4rem;
       margin-top: 2.9rem; } }
 
 @media screen and (min-width: 1200px) {
   .opportunitys {
+    margin: auto;
     background-color: #f4f4f4;
     display: flex;
     align-items: center;
@@ -674,7 +678,7 @@
         color: #848e97;
         line-height: 21px; }
     .opportunitys__container-editor {
-      background-image: url("/build/images/editor.svg");
+      background-image: url("/build/img/editor.svg");
       background-position: right;
       background-repeat: no-repeat;
       background-size: contain;
@@ -682,6 +686,7 @@
       height: 23rem;
       margin-top: 4rem; }
     .opportunitys__container {
+      width: 100%;
       padding-top: 3.5rem;
       align-items: flex-start;
       position: relative; }
@@ -725,7 +730,7 @@
           .opportunitys__container .discripsion__long__text-m {
             margin: 0px 0px 0.6rem; }
       .opportunitys__container-editor {
-        background-image: url("/build/images/editor%20(2).svg");
+        background-image: url("/build/img/editor%20(2).svg");
         height: 32.4rem;
         width: 45%;
         margin-top: 4.7rem;
@@ -746,7 +751,6 @@
 
 @media screen and (min-width: 320px) {
   .subscribe {
-    max-width: 1200px;
     height: 50.7rem;
     background-color: white; }
     .subscribe .hide_man {
@@ -754,6 +758,8 @@
     .subscribe .about__men {
       margin-bottom: 60px; }
     .subscribe__container {
+      margin: auto;
+      max-width: 1200px;
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -824,6 +830,7 @@
             font-size: 14px;
             margin: 18px 0px 28px; }
     .subscribe .carousel {
+      margin: auto;
       width: 96%;
       display: flex;
       flex-direction: column;
@@ -873,7 +880,6 @@
 
 @media screen and (min-width: 480px) {
   .subscribe {
-    max-width: 1200px;
     height: 50.7rem;
     background-color: white;
     height: 47.5rem; }
@@ -882,6 +888,8 @@
     .subscribe .about__men {
       margin-bottom: 60px; }
     .subscribe__container {
+      margin: auto;
+      max-width: 1200px;
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -952,6 +960,7 @@
             font-size: 14px;
             margin: 18px 0px 28px; }
     .subscribe .carousel {
+      margin: auto;
       width: 96%;
       display: flex;
       flex-direction: column;
@@ -1004,13 +1013,13 @@
       margin: 120px 0px 40px; }
       .subscribe .carousel .user__data__person {
         margin-bottom: 0px; }
-      .carousel .user__data__full {
+      .subscribe .carousel .user__data__full {
         flex-direction: column;
         margin-left: 20px;
         text-align: left; }
-        .carousel .user__data__full__person-name {
+        .subscribe .carousel .user__data__full__person-name {
           margin-bottom: 2px; }
-     .carousel__describe {
+    .subscribe .carousel__describe {
       align-items: center; } }
 
 @media screen and (min-width: 768px) {
@@ -1027,7 +1036,7 @@
     height: 36.8rem; }
     .subscribe .carousel .user__data {
       margin: 85px 0px 50px; }
+    .subscribe .carousel__hours {
+      padding-bottom: 60px; }
     .subscribe__describe__about {
-      font-size: 20px; }
-    .subscribe__hours {
-      padding-bottom: 60px; } }
+      font-size: 20px; } }
