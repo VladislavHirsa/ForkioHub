@@ -1623,14 +1623,15 @@ sans-serif;
 
     }
 
-    .footer__conteiner {
 
+    .footer__conteiner {
         padding: 35px 10px 0px 10px;
     }
 
     .forkio {
 
         margin-bottom: 35px;
+
 
         &__logo__heading {
             display: flex;
@@ -1641,6 +1642,7 @@ sans-serif;
             hight: 43px;
             margin-bottom: 25px;
             padding-left: 10px;
+            cursor: pointer;
 
 
             &-pen {
@@ -1648,11 +1650,19 @@ sans-serif;
                 padding-right: 18px;
             }
 
-            &-color {
-                color: #8d81ac;
+            &-pen2 {
+                padding-right: 18px;
+                display: none;
 
             }
+
+
+            &-colore {
+                color: #8d81ac;
+            }
         }
+
+
 
         &__description-text {
             padding-left: 10px;
@@ -1663,12 +1673,32 @@ sans-serif;
         }
     }
 
+    .forkio__logo__heading:hover {
+        color: #8d81ac;
+    }
+
+    .forkio__logo__heading:hover .forkio__logo__heading-colore {
+        color: #333333;
+    }
+
+    .forkio__logo__heading:hover .forkio__logo__heading-pen {
+        display: none;
+    }
+
+    .forkio__logo__heading:hover .forkio__logo__heading-pen2 {
+        display: block;
+    }
+
+
+
     .navigation {
         width: 250px;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         margin-bottom: 36px;
         padding-left: 10px;
+
 
         &__heading {
             @include heading;
@@ -1676,10 +1706,21 @@ sans-serif;
         }
 
         &__anchor {
+            position: relative;
             text-decoration: none;
             color: #8d81ac;
             font-size: 15px;
             line-height: 23px;
+            align-self: flex-start;
+        }
+
+        &__anchor:hover::before {
+            content: "";
+            position: absolute;
+            top: 21px;
+            display: inline-block;
+            width: 100%;
+            border-bottom: 1px solid #8d81ac;
         }
 
     }
@@ -1696,8 +1737,6 @@ sans-serif;
 
 
         &__phone {
-            //            display: flex;
-            //            align-items: flex-start;
             line-height: 22px;
             text-decoration: none;
             color: #31384d;
@@ -1746,6 +1785,7 @@ sans-serif;
 
     }
 
+
 }
 
 @media screen and (min-width:480px) {
@@ -1783,6 +1823,8 @@ sans-serif;
 
         }
     }
+
+
 
     .navigation {
         padding-left: 25px;
