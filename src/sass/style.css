@@ -1129,7 +1129,6 @@
       content: "";
       position: absolute;
       top: 21px;
-      display: inline-block;
       width: 100%;
       border-bottom: 1px solid #8d81ac; }
   .concat__location {
