@@ -1,7 +1,12 @@
+/*We have blocks and  in each of them arrows(arrow-left, arrow-right);
+
+*/
+
+
 
 
 (function carouselBlocks(){
-let arrows_left = [...document.getElementsByClassName("carousel__describe__arrows-left")]     
+let arrows_left = [...document.getElementsByClassName("carousel__describe__arrows-left")]     //
 let arrows_right = [...document.getElementsByClassName("carousel__describe__arrows-right")];
 let carouselContainer = [...document.getElementsByClassName("about__men")];
 let index = carouselContainer.findIndex((search) => !search.classList.contains('hide_man'));
