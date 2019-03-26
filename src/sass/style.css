@@ -994,6 +994,10 @@
           font-size: 13px;
           color: #ffffff;
           margin-bottom: 43px; }
+        .inputs__content__form__button-text-subscribe:hover {
+          background-color: #fff;
+          color: #8d81ac;
+          border: 1px solid #8d81ac; }
         .inputs__content__form__button-text-callme {
           display: none;
           border-style: none;
@@ -1108,8 +1112,6 @@
     color: #333333; }
   .forkio__logo__heading:hover .forkio__logo__heading-pen {
     display: none; }
-  .forkio__logo__heading:hover .forkio__logo__heading-pen2 {
-    display: block; }
   .navigation {
     width: 250px;
     display: flex;
@@ -1251,7 +1253,9 @@
     order: 4;
     padding-left: 0px;
     width: 305px;
-    margin-bottom: 0px; } }
+    margin-bottom: 0px; }
+  .forkio__logo__heading:hover .forkio__logo__heading-pen2 {
+    display: block; } }
 
 @media screen and (min-width: 1200px) {
   .footer__conteiner {

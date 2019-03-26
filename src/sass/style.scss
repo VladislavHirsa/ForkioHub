@@ -1448,6 +1448,12 @@ sans-serif;
                     margin-bottom: 43px;
                 }
 
+                &__button-text-subscribe:hover {
+                    background-color: #fff;
+                    color: #8d81ac;
+                    border: 1px solid #8d81ac;
+                }
+
                 &__button-text-callme {
                     display: none;
                     border-style: none;
@@ -1459,7 +1465,7 @@ sans-serif;
                     font-size: 13px;
                     color: #ffffff;
                 }
-                
+
                 &__button-text-callme:hover {
                     background-color: #fff;
                     color: #8d81ac;
@@ -1690,9 +1696,7 @@ sans-serif;
         display: none;
     }
 
-    .forkio__logo__heading:hover .forkio__logo__heading-pen2 {
-        display: block;
-    }
+
 
 
 
@@ -1917,11 +1921,14 @@ sans-serif;
         margin-bottom: 0px;
     }
 
+    .forkio__logo__heading:hover .forkio__logo__heading-pen2 {
+        display: block;
+    }
+
 }
 
 
 @media screen and (min-width:1200px) {
-    .footer {}
 
     .footer__conteiner {
         padding: 60px 10px 0px 10px;
