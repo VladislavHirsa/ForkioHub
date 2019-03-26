@@ -19,7 +19,9 @@
   margin-bottom: 20px; }
 
 .global {
-  margin: 0;
+  margin: auto;
+  max-width: 1200px;
+  margin: auto;
   padding: 0; }
 
 .header {
@@ -1393,8 +1395,324 @@
   .subscribe {
     height: 36.8rem; }
     .subscribe .carousel .user__data {
-      margin: 85px 0px 50px; }
+      margin: 87px 0px 49px; }
     .subscribe .carousel__hours {
       padding-bottom: 60px; }
-    .subscribe__describe__about {
+    .subscribe .carousel__describe {
+      width: 945px; }
+      .subscribe .carousel__describe__about {
+        width: 735px; } }
+
+@media screen and (min-width: 320px) {
+  .inputs {
+    background-color: #f4f4f4; }
+    .inputs__content {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      max-width: 1200px;
+      text-align: center;
+      padding: 0px 10px;
+      font-family: "Montserrat", sans-serif;
+      align-items: center; }
+      .inputs__content__descripsion-till767px {
+        font-family: "Montserrat";
+        color: #323232;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 30px 0px 35px;
+        width: 225px; }
+      .inputs__content__descripsion-from768px {
+        display: none;
+        font-family: "Montserrat";
+        color: #635c73;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 30px 0px 35px; }
+      .inputs__content__form {
+        flex-direction: column;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center; }
+        .inputs__content__form__name {
+          border-style: none;
+          border-radius: 21px;
+          background-color: #ffffff;
+          width: 265px;
+          height: 2.6rem;
+          font-family: "Montserrat", sans-serif;
+          color: #c8cbcf;
+          font-size: 14px;
+          margin-bottom: 16px;
+          padding-left: 25px; }
+        .inputs__content__form__phone {
+          border-style: none;
+          border-radius: 21px;
+          background-color: #ffffff;
+          width: 265px;
+          height: 2.6rem;
+          font-family: "Montserrat", sans-serif;
+          color: #c8cbcf;
+          font-size: 14px;
+          margin-bottom: 20px;
+          padding-left: 25px; }
+        .inputs__content__form__button-text-subscribe {
+          border-style: none;
+          border-radius: 21px;
+          background-color: #8d81ac;
+          width: 140px;
+          height: 2.6rem;
+          font-family: "Montserrat", sans-serif;
+          font-size: 13px;
+          color: #ffffff;
+          margin-bottom: 43px; }
+        .inputs__content__form__button-text-subscribe:hover {
+          background-color: #fff;
+          color: #8d81ac;
+          border: 1px solid #8d81ac; }
+        .inputs__content__form__button-text-callme {
+          display: none;
+          border-style: none;
+          border-radius: 21px;
+          background-color: #8d81ac;
+          width: 140px;
+          height: 2.6rem;
+          font-family: "Montserrat", sans-serif;
+          font-size: 13px;
+          color: #ffffff; }
+        .inputs__content__form__button-text-callme:hover {
+          background-color: #fff;
+          color: #8d81ac;
+          border: 1px solid #8d81ac; } }
+
+@media screen and (min-width: 480px) {
+  .inputs__content__descripsion-till767px {
+    margin: 50px 0px 50px;
+    font-size: 28px;
+    width: 100%; }
+  .inputs__content__form__button-text-subscribe {
+    margin-bottom: 50px; } }
+
+@media screen and (min-width: 768px) {
+  .inputs__content__descripsion-till767px {
+    display: none; }
+  .inputs__content__descripsion-from768px {
+    display: block;
+    margin: 25px 0px 30px; }
+  .inputs__content__form {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 710px; }
+    .inputs__content__form__name {
+      width: 305px;
+      padding-left: 30px;
+      margin-bottom: 26px; }
+    .inputs__content__form__phone {
+      margin-left: 35px;
+      width: 305px;
+      padding-left: 30px;
+      margin-bottom: 26px; }
+    .inputs__content__form__button-text-subscribe {
+      display: none; }
+    .inputs__content__form__button-text-callme {
+      display: block;
+      margin-left: 0px;
+      margin-bottom: 30px; } }
+
+@media screen and (min-width: 1200px) {
+  .inputs {
+    height: 8.37rem; }
+    .inputs__content {
+      height: 8.37rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .inputs__content__descripsion-from768px {
+        display: block;
+        margin: 25px 0px 25px; }
+      .inputs__content__form {
+        width: auto; }
+        .inputs__content__form__name {
+          margin-bottom: 0px; }
+        .inputs__content__form__phone {
+          margin: 0px 16px; }
+        .inputs__content__form__button-text-subscribe {
+          display: none; }
+        .inputs__content__form__button-text-callme {
+          display: block;
+          margin: 0px; } }
+
+@media screen and (min-width: 320px) {
+  .footer {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column; }
+  .footer__conteiner {
+    padding: 35px 10px 0px 10px; }
+  .forkio {
+    margin-bottom: 35px; }
+    .forkio__logo__heading {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 24px;
+      color: #333333;
+      hight: 43px;
+      margin-bottom: 25px;
+      padding-left: 10px;
+      cursor: pointer;
+      margin: 85px 0px 50px; }
+      .forkio__logo__heading-pen {
+        display: none;
+        padding-right: 18px; }
+      .forkio__logo__heading-pen2 {
+        padding-right: 18px;
+        display: none; }
+    .forkio__hours {
+      padding-bottom: 60px; }
+    .forkio__description-text {
+      padding-left: 10px;
+      color: #848e97;
+      font-size: 14px;
+      line-height: 23px;
+      width: 260px; }
+  .forkio__logo__heading:hover {
+    color: #8d81ac; }
+  .forkio__logo__heading:hover .forkio__logo__heading-colore {
+    color: #333333; }
+  .forkio__logo__heading:hover .forkio__logo__heading-pen {
+    display: none; }
+  .navigation {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+    padding-left: 10px; }
+    .navigation__heading {
+      color: #323232;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 15px; }
+    .navigation__anchor {
+      position: relative;
+      text-decoration: none;
+      color: #8d81ac;
+      font-size: 15px;
+      line-height: 23px;
+      align-self: flex-start; }
+    .navigation__anchor:hover::before {
+      content: "";
+      position: absolute;
+      top: 21px;
+      width: 100%;
+      border-bottom: 1px solid #8d81ac; }
+  .concat__location {
+    display: flex;
+    flex-direction: column; }
+  .contact {
+    margin-bottom: 36px;
+    width: 250px;
+    padding-left: 10px; }
+    .contact__phone {
+      line-height: 22px;
+      text-decoration: none;
+      color: #31384d;
+      font-size: 30px;
+      font-weight: 700; }
+    .contact__availble {
+      color: #848e97;
+      font-size: 12px;
+      margin-top: 13px; }
+  .location {
+    width: 250px;
+    margin-bottom: 31px;
+    padding-left: 10px; }
+    .location-city {
+      color: #323232;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 12px; }
+    .location-region {
+      color: #848e97;
+      font-size: 14px;
+      line-height: 24px; }
+  .info {
+    width: 250px;
+    margin-bottom: 50px;
+    padding-left: 10px; }
+    .info__heading {
+      color: #323232;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 17px; }
+    .info__text {
+      line-height: 23px;
+      color: #848e97;
+      font-size: 14px; }
+    .info__describe__about {
       font-size: 20px; } }
+
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-wrap: wrap; }
+  .footer__conteiner {
+    margin: auto;
+    padding: 28px 10px 0px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    justify-content: space-between; }
+  .forkio {
+    order: 1;
+    margin-bottom: 90px; }
+    .forkio__logo__heading {
+      padding-left: 4px;
+      border-bottom: none;
+      width: 305px; }
+    .forkio__description-text {
+      padding-left: 4px;
+      width: 305px; }
+  .navigation {
+    order: 2;
+    padding-left: 0px;
+    width: 305px; }
+  .concat__location {
+    order: 3; }
+  .contact {
+    padding-left: 4px;
+    width: 305px; }
+  .location {
+    padding-left: 4px; }
+  .info {
+    height: 0px;
+    order: 4;
+    padding-left: 0px;
+    width: 305px;
+    margin-bottom: 0px; }
+  .forkio__logo__heading:hover .forkio__logo__heading-pen2 {
+    display: block; } }
+
+@media screen and (min-width: 1200px) {
+  .footer__conteiner {
+    padding: 60px 10px 0px 10px;
+    flex-wrap: nowrap;
+    width: 1200px;
+    justify-content: space-between; }
+  .forkio__logo__heading {
+    padding-left: 0px; }
+  .forkio__description-text {
+    padding-left: 0px; }
+  .navigation {
+    padding-left: 0px;
+    width: 150px; }
+  .contact {
+    padding-left: 0px;
+    width: 220px; }
+  .location {
+    padding-left: 0px;
+    width: 220px; } }
