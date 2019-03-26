@@ -1459,6 +1459,12 @@ sans-serif;
                     font-size: 13px;
                     color: #ffffff;
                 }
+                
+                &__button-text-callme:hover {
+                    background-color: #fff;
+                    color: #8d81ac;
+                    border: 1px solid #8d81ac;
+                }
             }
 
 
