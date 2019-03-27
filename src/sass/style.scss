@@ -394,7 +394,6 @@ margin: 44px auto 0px;
 border-radius: 1px;
 }
 .people-are-talking-about-us{
-margin-top: 84px;
 background-image: url("../img/people-bg.jpg");
 display: flex;
 justify-content: center;
@@ -1258,7 +1257,7 @@ text-align: center;
             }
 
             &-editor {
-                background-image: url("../build/img/editor%20(1).svg");
+                background-image: url("../../build/img/editor%20(1).svg");
                 background-size: contain;
                 height: 32.4rem;
                 margin-top: 2.2rem;
@@ -1324,7 +1323,7 @@ text-align: center;
             }
 
             &-editor {
-                background-image: url("../build/img/editor%20(2).svg");
+                background-image: url("../../build/img/editor%20(2).svg");
                 height: 32.4rem;
                 margin-top: 2.9rem;
             }
@@ -1397,7 +1396,7 @@ text-align: center;
             }
 
             &-editor {
-                background-image: url('./build/img/editor%20(2).svg');
+                background-image: url('../../build/img/editor%20(2).svg');
                 height: 32.4rem;
                 width: 45%;
                 margin-top: 4.7rem;

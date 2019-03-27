@@ -19,7 +19,6 @@
   margin-bottom: 20px; }
 
 .global {
-  margin: auto;
   max-width: 1200px;
   margin: auto;
   padding: 0; }
@@ -291,7 +290,6 @@
   border-radius: 1px; }
 
 .people-are-talking-about-us {
-  margin-top: 84px;
   background-image: url("../img/people-bg.jpg");
   display: flex;
   justify-content: center;
@@ -921,7 +919,7 @@
         .opportunitys__container .discripsion__long__text-s {
           line-height: 22px; }
     .opportunitys__container-editor {
-      background-image: url("../build/img/editor%20(1).svg");
+      background-image: url("../../build/img/editor%20(1).svg");
       background-size: contain;
       height: 32.4rem;
       margin-top: 2.2rem; } }
@@ -1002,7 +1000,7 @@
           font-weight: 400;
           line-height: 22px; }
     .opportunitys__container-editor {
-      background-image: url("../build/img/editor%20(2).svg");
+      background-image: url("../../build/img/editor%20(2).svg");
       height: 32.4rem;
       margin-top: 2.9rem; } }
 
@@ -1090,7 +1088,7 @@
           .opportunitys__container .discripsion__long__text-m {
             margin: 0px 0px 0.6rem; }
       .opportunitys__container-editor {
-        background-image: url("./build/img/editor%20(2).svg");
+        background-image: url("../../build/img/editor%20(2).svg");
         height: 32.4rem;
         width: 45%;
         margin-top: 4.7rem;
