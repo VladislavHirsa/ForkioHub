@@ -1012,7 +1012,7 @@
     align-items: center;
     flex-direction: column;
     height: 95.6rem;
-    height: 44.4rem;
+    height: 36.4rem;
     max-width: 1200px; }
     .opportunitys__container .descripsion {
       font-family: "Montserrat";
@@ -1199,42 +1199,45 @@
         flex-direction: column;
         font-family: "Montserrat", sans-serif;
         align-items: center;
-        margin: 64px 0px 20px; }
+        margin: 65px 0px 19px; }
         .subscribe .carousel .user__data__person {
           width: 87px;
           height: 87px;
           border-radius: 50%;
           border: 1px solid red;
-          margin-bottom: 1.2rem; }
+          margin-bottom: 25px; }
         .subscribe .carousel .user__data__full__person-name {
           font-family: "Montserrat";
           font-size: 24px;
           font-weight: 700;
           color: #474747;
-          margin-bottom: 12px; }
+          margin-bottom: 4px; }
         .subscribe .carousel .user__data__full__nickName {
           font-family: "Montserrat";
           font-size: 16px;
           color: #8d81ac; }
       .subscribe .carousel__describe {
+        width: 280px;
         display: flex;
-        align-items: baseline; }
+        align-items: baseline;
+        justify-content: space-between; }
         .subscribe .carousel__describe__about {
           color: #333333;
           font-family: "Lato";
-          font-size: 17px; }
+          font-size: 16px;
+          width: 205px; }
           .subscribe .carousel__describe__about-mail {
             color: #8d81ac; }
         .subscribe .carousel__describe__arrows-left {
-          color: #a2a2a2;
-          width: 50px; }
+          width: 9px;
+          height: 15px; }
         .subscribe .carousel__describe__arrows-right {
-          color: #a2a2a2;
-          width: 50px; }
+          width: 9px;
+          height: 15px; }
       .subscribe .carousel__hours {
         color: #848e97;
         font-size: 16px;
-        margin-top: 24px; } }
+        margin-top: 15px; } }
 
 @media screen and (min-width: 480px) {
   .subscribe {
@@ -1329,42 +1332,45 @@
         flex-direction: column;
         font-family: "Montserrat", sans-serif;
         align-items: center;
-        margin: 64px 0px 20px; }
+        margin: 65px 0px 19px; }
         .subscribe .carousel .user__data__person {
           width: 87px;
           height: 87px;
           border-radius: 50%;
           border: 1px solid red;
-          margin-bottom: 1.2rem; }
+          margin-bottom: 25px; }
         .subscribe .carousel .user__data__full__person-name {
           font-family: "Montserrat";
           font-size: 24px;
           font-weight: 700;
           color: #474747;
-          margin-bottom: 12px; }
+          margin-bottom: 4px; }
         .subscribe .carousel .user__data__full__nickName {
           font-family: "Montserrat";
           font-size: 16px;
           color: #8d81ac; }
       .subscribe .carousel__describe {
+        width: 280px;
         display: flex;
-        align-items: baseline; }
+        align-items: baseline;
+        justify-content: space-between; }
         .subscribe .carousel__describe__about {
           color: #333333;
           font-family: "Lato";
-          font-size: 17px; }
+          font-size: 16px;
+          width: 205px; }
           .subscribe .carousel__describe__about-mail {
             color: #8d81ac; }
         .subscribe .carousel__describe__arrows-left {
-          color: #a2a2a2;
-          width: 50px; }
+          width: 9px;
+          height: 15px; }
         .subscribe .carousel__describe__arrows-right {
-          color: #a2a2a2;
-          width: 50px; }
+          width: 9px;
+          height: 15px; }
       .subscribe .carousel__hours {
         color: #848e97;
         font-size: 16px;
-        margin-top: 24px; }
+        margin-top: 15px; }
     .subscribe .carousel .user__data {
       flex-direction: row;
       justify-content: center;
@@ -1714,3 +1720,12 @@
   .location {
     padding-left: 0px;
     width: 220px; } }
+
+@media screen and (min-width: 480px) {
+  .forkio__logo__heading-pen {
+    display: block; }
+  .forkio__logo__heading:hover .forkio__logo__heading-pen {
+    display: none; } }
+
+.forkio__logo__heading {
+  margin: 10px 0px 10px; }

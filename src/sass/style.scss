@@ -1336,7 +1336,7 @@ text-align: center;
 
     .opportunitys {
         @include display;
-        height: 44.4rem;
+        height: 36.4rem;
         max-width: 1200px;
 
         &__container {
@@ -1566,14 +1566,14 @@ text-align: center;
             flex-direction: column;
             font-family: "Montserrat", sans-serif;
             align-items: center;
-            margin: 64px 0px 20px;
+            margin: 65px 0px 19px;
 
             &__person {
                 width: 87px;
                 height: 87px;
                 border-radius: 50%;
                 border: 1px solid red;
-                margin-bottom: 1.2rem;
+                margin-bottom: 25px;
             }
 
             &__full {
@@ -1582,7 +1582,7 @@ text-align: center;
                     font-size: 24px;
                     font-weight: 700;
                     color: #474747;
-                    margin-bottom: 12px;
+                    margin-bottom: 4px;
 
                 }
 
@@ -1595,13 +1595,16 @@ text-align: center;
         }
 
         &__describe {
+            width: 280px;
             display: flex;
             align-items: baseline;
+            justify-content: space-between;
 
             &__about {
                 color: #333333;
                 font-family: "Lato";
-                font-size: 17px;
+                font-size: 16px;
+                width: 205px;
 
 
                 &-mail {
@@ -1611,28 +1614,26 @@ text-align: center;
             }
 
             &__arrows-left {
-                color: rgb(162, 162, 162);
-                width: 50px;
+                width: 9px;
+                height: 15px;
             }
 
             &__arrows-right {
-                color: rgb(162, 162, 162);
-                width: 50px;
-                
+                width: 9px;
+                height: 15px;
             }
         }
 
         &__hours {
             color: #848e97;
             font-size: 16px;
-            margin-top: 24px;
+            margin-top: 15px;
         }
     }
 
 
 
 }
-
 
 @media screen and (min-width:320px) {
     .subscribe {
@@ -2286,4 +2287,15 @@ text-align: center;
         width: 220px;
     }
 
+}
+@media screen and (min-width: 480px){
+    .forkio__logo__heading-pen{
+        display: block ;
+    }
+    .forkio__logo__heading:hover .forkio__logo__heading-pen{
+        display: none;
+    }
+}
+.forkio__logo__heading{
+    margin: 10px 0px 10px;
 }
